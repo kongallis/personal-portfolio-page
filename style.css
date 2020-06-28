@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -17,32 +17,77 @@ body {
 #navbar {
   position: sticky;
   top: 0;
-  background-color: brown;
+  background-color: #be3144;
   display: flex;
+  height: 7vh;
+  padding: 8px;
 }
 
 ul {
-  list-style-type: none;
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-
-#navbar li {
-  margin: 5px;
+ul li {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  color: white;
 }
 
-a:visited {
-  color: blue;
+#navbar li {
+  margin: auto 5px;
+  align-items: center;
+  font-size: 18pt;
 }
 
 #welcome-section {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #303841;
+  text-align: center;
+}
+
+#projects {
+  background-color: #45567d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-of-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.project {
+  flex-basis: 45%;
+  margin: 10px;
 }
 
 @media (max-width: 360px) {
   .list-of-projects {
     flex-direction: column;
   }
+}
+
+img {
+  height: 350px;
+  width: 500px;
+}
+
+#profile-link {
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+#projects a {
+  text-decoration: none;
 }
