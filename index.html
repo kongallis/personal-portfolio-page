@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -21,7 +22,10 @@
       </ul>
     </nav>
     <section id="welcome-section">
-      <h1>CONTAINS TEXT</h1>
+      <h1>
+        Hi, my name is Konstantinos and<br />
+        <span style="color: #be3144;"> I am a software developer!</span>
+      </h1>
     </section>
     <section id="projects">
       <h2>
@@ -29,12 +33,14 @@
       </h2>
       <div class="list-of-projects">
         <div class="project">
-          <img class="project-image" src="" />
-          <a href=""><h4 class="project-title"></h4></a>
+          <img class="project-image" src="./img/ruby.png" />
+          <a href="https://codepen.io/kongallis/pen/KKVaJmY"
+            ><h4 class="project-title">Ruby Documentation</h4></a
+          >
         </div>
         <div class="project">
-          <img class="project-image" src="" />
-          <a href=""><h4 class="project-title"></h4></a>
+          <img class="project-image" src="./img/fender.png" />
+          <a href=""><h4 class="project-title">Guitar Shop</h4></a>
         </div>
         <div class="project">
           <img class="project-image" src="" />
@@ -46,6 +52,17 @@
         </div>
       </div>
       <button><a id="profile-link" href="">Show all ></a></button>
+    </section>
+    <section id="contact">
+      <div id="contact-text">
+        <h2>Let's work together...</h2>
+        <p>Find me on</p>
+      </div>
+      <div id="contact-links">
+        <a href=""><i class="fab fa-github"></i> Github</a>
+        <a href=""><i class="fab fa-twitter"></i> Twiitter</a>
+        <a href=""><i class="fas fa-envelope-square"></i> Mail</a>
+      </div>
     </section>
   </body>
 </html>
