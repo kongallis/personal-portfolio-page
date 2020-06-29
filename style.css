@@ -13,6 +13,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+html {
+  display: flex;
+  flex: 1;
+}
 
 #navbar {
   position: sticky;
@@ -83,12 +87,6 @@ ul a {
   margin: auto;
 }
 
-@media (max-width: 360px) {
-  .list-of-projects {
-    flex-direction: column;
-  }
-}
-
 img {
   height: 350px;
   width: 500px;
@@ -119,4 +117,37 @@ img {
   color: white;
   margin: 10px;
   text-decoration: none;
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 12pt;
+  }
+  #navbar ul {
+    justify-content: center;
+  }
+  #navbar li {
+    margin: auto 10px;
+  }
+  .list-of-projects {
+    flex-direction: column;
+  }
+
+  img {
+    height: 250px;
+    width: 350px;
+  }
+
+  .project h4 {
+    width: 350px;
+  }
+
+  #contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profile-link {
+    padding: 5px;
+  }
 }
